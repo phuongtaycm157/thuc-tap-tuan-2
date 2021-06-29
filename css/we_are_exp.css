@@ -1,0 +1,23 @@
+.we-are-exp {
+    width: 1440px;
+    height: 573px;
+    padding: 0;
+    background-color: #f7f9fb;
+    border-top: 1px solid #D2DDE8;
+}
+.we-are-exp .content {
+    width:640px;
+    font-size: 18px;
+}
+.we-are-exp .title {
+    width: 512px;
+}
+.we-are-exp .title-3 {
+    font-size: 40px;
+}
+.we-are-exp .title-2 {
+    font-size: 80px;
+}
+.we-are-exp .title-1 {
+    font-size: 60px;
+}

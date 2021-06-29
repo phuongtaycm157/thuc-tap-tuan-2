@@ -1,0 +1,84 @@
+.nps-awards {
+    width: 1440px;
+    height: 800px;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: LibreBaskerville, sans-serif;
+}
+.nps-awards .nps-awards__title {
+    font-family: inherit;
+    font-size: 40px;
+}
+.nps-awards .nps-awards__content {
+    font-family: inherit;
+    font-size: 18px;
+}
+.nps-awards .nps-awards__images {
+    width: 532px;
+    height: 199px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter div[class^='rec-'] {
+    width: 88px;
+    height: 88px;
+    background-image: url(../images/image-8.png);
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-position: -278px -240px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-8 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-position: -722px -240px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-2 {
+    position: absolute;
+    top: 0px;
+    left: 111px;
+    background-position: -389px -240px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-3 {
+    position: absolute;
+    bottom: 0px;
+    left: 111px;
+    background-position: -389px -351px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-4 {
+    position: absolute;
+    top: 0px;
+    left: 222px;
+    background-position: -500px -240px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-5 {
+    position: absolute;
+    bottom: 0px;
+    left: 222px;
+    background-position: -500px -351px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-6 {
+    position: absolute;
+    top: 0px;
+    left: 333px;
+    background-position: -611px -240px;
+}
+.nps-awards .nps-awards__images .nps-awards__images--filter .rec-7 {
+    position: absolute;
+    bottom: 0px;
+    left: 333px;
+    background-position: -611px -351px;
+}
+.nps-awards .nps-awards__button a {
+    font-size:14px;
+    color: #000
+}
+.nps-awards .nps-awards__button a:hover {
+    text-decoration: none;
+}

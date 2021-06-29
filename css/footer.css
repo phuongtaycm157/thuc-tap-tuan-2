@@ -1,0 +1,16 @@
+.footer-top {
+    width: 1440px;
+}
+.footer-top b,
+.footer-top small {
+    display: block;
+}
+.footer-top small {
+    font-size: 14px;
+    font-style: italic;
+}
+footer small {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}

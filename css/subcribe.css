@@ -1,0 +1,37 @@
+.subscribe {
+    width: 1440px;
+    height: 388px;
+    padding: 0;
+    background-color: #fff;
+    font-family: LibreBaskerville, sans-serif;
+}
+.subscribe .subcribe__title {
+    font-size: 28px;
+}
+.subscribe .subcribe__input {
+    display: flex;
+    align-items: center;
+}
+.subscribe .subcribe__input input {
+    border: none;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    height: 53px;
+    width: 484px;
+    padding: 16px 20px;
+}
+.subscribe .subcribe__input input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+.subscribe .subcribe__input input:focus {
+    outline: none;
+}
+.subscribe .subcribe__input button {
+    color: white;
+    background-color: #000;
+    border: none;
+    height: 53px;
+    width: 53px;
+}
