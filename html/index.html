@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/font_style.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -21,22 +20,29 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/17d9afb30b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/17d9afb30b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/collapse.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../images/icon.png" />
+    <link rel="stylesheet" href="../css/font_style.css" />
+    <link rel="stylesheet" href="../css/dark_banner.css" />
+    <link rel="stylesheet" href="../css/intro_image.css" />
+    <link rel="stylesheet" href="../css/nps_awards.css" />
+    <link rel="stylesheet" href="../css/latest_from.css" />
+    <link rel="stylesheet" href="../css/we_are_exp.css" />
+    <link rel="stylesheet" href="../css/subcribe.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <title>Free Photographer Portfolio</title>
-    <link rel="stylesheet" href="../css/main_page.css">
-    <link rel="stylesheet" href="../css/latest_from.css">
-    <link rel="stylesheet" href="../css/nps_awards.css">
-    <link rel="stylesheet" href="../css/we_are_exp.css">
-    <link rel="stylesheet" href="../css/subcribe.css">
-    <link rel="stylesheet" href="../css/footer.css">
   </head>
   <body>
-    <!-- main page -->
-    <div class="container-fluid main-page">
-      <div class="anchor">
-        <div class="main-page__dark-banner">
-          <div class="main-page__dark-banner--bg"></div>
-          <div class="main-page__dark-banner--filter">
+    <!-- dark banner -->
+    <div class="container-fluid dark-banner d-none d-lg-block">
+      <div class="row h-100">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 h-100 archor">
+          <div class="dark-banner__filter">
             <div class="vertical-line"></div>
             <div class="vertical-line"></div>
             <div class="vertical-line"></div>
@@ -55,201 +61,290 @@
             <div class="vertical-line"></div>
             <div class="vertical-line"></div>
           </div>
-          <div class="main-page__dark-banner--text">
-            made it for Photographers 
+          <div class="dark-banner__text">
+            <span>Made it for photographers</span>
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+    <!-- Main Page -->
+    <div class="container-fluid" style="background-color: #f7f9fb">
+      <div class="container-md shadow-lg-sm rounded p-sm-4 pr-sm-5 main-page">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <a class="navbar-brand" href="#">
+            <img src="../images/icon.png" style="width: 2rem; height: 2rem" />
+          </a>
+          <button
+            id="collapseButton"
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="../images/phone.png"
+              id="phoneIcon"
+              class="mr-4"
+              width="20"
+              height="20"
+            />
+            <img src="../images/hambuger.png" id="openIcon" />
+            <img src="../images/cancel.svg" id="closeIcon" width="19" />
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-5 my-5 my-lg-0 py-5 py-lg-0">
+              <li class="nav-item active mx-3">
+                <a class="nav-link" href="#">Awards</a>
+              </li>
+              <li class="nav-item active mx-3">
+                <a class="nav-link" href="#">Shots</a>
+              </li>
+              <li class="nav-item active mx-3">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item active mx-3">
+                <a class="nav-link" href="#">who we are</a>
+              </li>
+              <li class="nav-item active mx-3">
+                <a class="nav-link" href="#">Find us</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+              <img
+                src="../images/phone.png"
+                class="mr-2"
+                style="width: 1.2rem; height: 1.2rem"
+              />
+              <span>+91 9949 63 6868</span>
+            </form>
+          </div>
+        </nav>
+        <div class="row intro">
+          <div
+            class="
+              col-11 col-sm-7 col-lg-6
+              d-flex
+              justify-content-center
+              mb-5 mb-sm-0
+            "
+          >
+            <div class="slogan d-flex flex-column align-items-end">
+              <div class="space"></div>
+              <div class="small-text pr-5 mr-2">We are creative</div>
+              <div class="large-text">Photographers</div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-5 col-lg-6 p-0">
+            <div class="anchor">
+              <div class="img-1"></div>
+              <div class="img-2"></div>
+              <div class="img-3"></div>
+              <div class="img-4"></div>
+              <div class="img-5"></div>
+              <div class="img-6"></div>
+              <div class="img-7"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="main-page__intro container-fluid shadow-sm">
-         <div class="main-page__intro--navbar">
-          <ul class="nav align-items-center ml-2 pt-3 mt-4">
-            <li class="nav-item mr-5">
-              <a class="nav-link active" href="#">
-                <img src="../images/icon.png" width="30" height="30">
-              </a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Awards</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Shots</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">who we are</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Find us</a>
-            </li>
-            <li class="nav-item ml-5">
-              <a class="nav-link disabled" href="#">
-                <img src="../images/phone.png" class="mr-2" width="20" height="20">
-                <span>+91 9949 63 6868</span>
-              </a>
-            </li>
-          </ul>          
-         </div>
-         <div class="main-page__intro--slogan">
-           <div class="col-6 d-flex flex-column align-items-end">
-             <div class="my-5 py-4"></div>
-             <div class="small-text pr-5 mr-2">
-               We are creative
-             </div>
-             <div class="large-text">
-               Photographers
-             </div>
-           </div>
-         </div>
-         <div class="main-page__intro--grid-images">
-          <div class="anchor">
-            <div class="img-1"></div>
-            <div class="img-2"></div>
-            <div class="img-3"></div>
-            <div class="img-4"></div>
-            <div class="img-5"></div>
-            <div class="img-6"></div>
-            <div class="img-7"></div>
-            </div>
-          </div>
-      </div>
     </div>
-
-    <!-- Lastest From -->
-    <div class="latest-from container-fluid">
-      <div class="container h-100">
-        <div class="col-12 h-100 d-flex flex-column justify-content-center align-items-center">
-          <h1 class="latest-from__title display-4 mb-5">Latest from our Clients</h1>
-          <div class="latest-from__content mb-5">
+    <!-- Latest From -->
+    <div class="container-md py-5 my-5">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="latest-from__title px-5 mb-5">
+            Latest from our Clients
+          </div>
+          <div class="latest-from__content d-flex align-items-center px-5 mb-5">
             <div class="latest-from__content--open">"</div>
             <div class="latest-from__content--content">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type.
             </div>
             <div class="latest-from__content--close">"</div>
           </div>
-          <button class="latest-from__button">
-            <span class="mr-2">View All</span>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </button>
+          <div class="d-none d-lg-flex justify-content-center">
+            <button class="latest-from__button">
+              <span class="mr-2">View All</span>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- NPS Awards -->
-    <div class="nps-awards container-fluid d-flex align-items-center">
-      <div class="d-flex flex-column align-items-center">
-        <div class="nps-awards__title mb-3">
-          NPS Awards Winner
-        </div>
-        <div class="nps-awards__content row col-10 d-flex justify-content-center mb-5">
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>  
-          <div>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, and scrambled it to make a type specimen book</div>
-        </div>
-        <div class="nps-awards__images my-5">
-          <div class="nps-awards__images--filter">
-            <div class="rec-1"></div>
-            <div class="rec-2"></div>
-            <div class="rec-3"></div>
-            <div class="rec-4"></div>
-            <div class="rec-5"></div>
-            <div class="rec-6"></div>
-            <div class="rec-7"></div>
-            <div class="rec-8"></div>
+    <div class="container-fluid border-top border-bottom">
+      <div class="container-md py-5">
+        <div class="row">
+          <div class="col-12 p-0">
+            <div class="nps-awards d-lg-flex flex-column align-items-center">
+              <div class="nps-awards__title mb-5">Awards Winner</div>
+              <div class="nps-awards__content mb-5 pb-5">
+                <span
+                  >Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </span>
+                <br class="d-lg-none" />
+                <span
+                  >Lorem Ipsum has been the industry’s standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.</span
+                >
+              </div>
+              <div class="nps-awards__image mb-5">
+                <div class="crop-img-1"></div>
+                <div class="crop-img-2"></div>
+                <div class="crop-img-3"></div>
+                <div class="crop-img-4"></div>
+                <div class="crop-img-5"></div>
+                <div class="crop-img-6"></div>
+                <div class="crop-img-7"></div>
+                <div class="crop-img-8"></div>
+              </div>
+              <div class="d-none d-lg-block">
+                <a
+                  href="#"
+                  class="view-all d-flex flex-column align-items-center"
+                >
+                  <span class="mb-3" style="font-size: 0.8rem">View All</span>
+                  <i class="fas fa-long-arrow-alt-down"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="nps-awards__button mt-5">
-          <a href="#" class="d-flex flex-column align-items-center">
-            <span class="mb-3">View All</span>
-            <i class="fas fa-long-arrow-alt-down"></i>
-          </a>
         </div>
       </div>
     </div>
 
     <!-- We are exp -->
-    <div class="we-are-exp container-fluid d-flex align-items-center justify-content-center">
+    <div
+      class="we-are-exp container-fluid py-lg-5"
+      style="background-color: #f7f9fb"
+    >
+      <div class="container py-lg-5">
+        <div class="row">
+          <div class="col-12 col-lg-5 py-5">
+            <div>
+              <div class="we-are-exp__title">
+                <div class="title-1">we are</div>
+                <div class="title-2">Experienced</div>
+                <div class="title-3">Photographers</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="we-are-exp__content">
+              <p class="my-3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <p class="my-3">
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p class="my-3">
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subcribe -->
+    <div class="container-md subscribe p-5">
       <div class="row">
-        <div class="title d-flex flex-column mr-5">
-          <div class="title-1 align-self-start">we are</div>
-          <div class="title-2">Experienced</div>
-          <div class="title-3 align-self-end">Photographers</div>
-        </div>
-        <div class="content">
-          <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p class="my-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-          <p class="my-4">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Subcribe  -->
-    <div class="subscribe container-fluid d-flex justify-content-center align-items-center border-bottom">
-      <div class="d-flex flex-column align-items-center">
-        <div class="subcribe__title mb-4">
-          Subscribe with us and Get free image
-        </div>
-        <div class="subcribe__input">
-          <input type="text" placeholder="Your email here">
-          <button><i class="fas fa-long-arrow-alt-right"></i></button>
-        </div>
-        <div class="subcribe__socials p-5">
-          <i class="fab fa-lg mx-4 fa-facebook-f"></i>
-          <i class="fab fa-lg mx-4 fa-flickr"></i>
-          <i class="fab fa-lg mx-4 fa-instagram"></i>
-          <i class="fab fa-lg mx-4 fa-linkedin-in"></i>
-          <i class="fab fa-lg mx-4 fa-twitter"></i>
+        <div class="col-12">
+          <div class="d-flex flex-column align-items-center">
+            <div class="subcribe__title mb-4">
+              Subscribe with us and Get free image
+            </div>
+            <div class="subcribe__input">
+              <input type="text" placeholder="Your email here" />
+              <button><i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+            <div class="subcribe__socials p-5">
+              <a href="">
+                <i class="fab fa-lg mx-4 fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-lg mx-4 fa-flickr"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-lg mx-4 fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-lg mx-4 fa-linkedin-in"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-lg mx-4 fa-twitter"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Footer  -->
-    <div class="footer-top container-fluid border-bottom p-5">
-      <div class="row m-5">
-        <div class="col-3">
-          <b class="mb-2">Wedding</b>
-          <small>Abelard and Heloise</small>
-          <small>Wedding Stories</small>
-          <small>Adam & Eve</small>
-          <small>Anthony & Cleopatra</small>
-          <small>Barati & Barat</small>
-          <small>Isabella & Mason</small>
-          <small>Jacob & Emma</small>
-        </div>
-        <div class="col-3">
-          <b class="mb-2">Fine Arts</b>
-          <small>Mona & Hooman</small>
-          <small>Amanda & Mario</small>
-          <small>Harsha & Shakeel</small>
-          <small>Anna & Stan</small>
-          <small>Ashley & Joel</small>
-          <small>Krishna & Bernd</small>
-          <small>Coral & Galen</small>
-        </div>
-        <div class="col-3">
-          <b class="mb-2">Products</b>
-          <small>Colgate</small>
-          <small>Lux: Hindustan Unilver Ltd</small>
-          <small>Lifebuoy</small>
-          <small>Pepsodent</small>
-          <small>Britannia</small>
-          <small>Glucon D</small>
-          <small>Parle Products</small>
-        </div>
-        <div class="col-3">
-          <b class="mb-2">Sports</b>
-          <small>Association Football (Soccer)</small>
-          <small>Cricket</small>
-          <small>Baseball</small>
-          <small>Volleyball</small>
-          <small>Tennis</small>
-          <small>Field Hockey</small>
-          <small>Table Tennis</small>
+    <!-- Footer -->
+    <div class="container-fluid border-bottom border-top">
+      <div class="footer-top container-md border-bottom p-5">
+        <div class="row m-lg-5">
+          <div class="col-6 col-lg-3">
+            <b class="mb-2">Wedding</b>
+            <small>Abelard and Heloise</small>
+            <small>Wedding Stories</small>
+            <small>Adam & Eve</small>
+            <small>Anthony & Cleopatra</small>
+            <small>Barati & Barat</small>
+            <small>Isabella & Mason</small>
+            <small>Jacob & Emma</small>
+          </div>
+          <div class="col-6 col-lg-3">
+            <b class="mb-2">Fine Arts</b>
+            <small>Mona & Hooman</small>
+            <small>Amanda & Mario</small>
+            <small>Harsha & Shakeel</small>
+            <small>Anna & Stan</small>
+            <small>Ashley & Joel</small>
+            <small>Krishna & Bernd</small>
+            <small>Coral & Galen</small>
+          </div>
+          <div class="col-6 col-lg-3">
+            <b class="mb-2">Products</b>
+            <small>Colgate</small>
+            <small>Lux: Hindustan Unilver Ltd</small>
+            <small>Lifebuoy</small>
+            <small>Pepsodent</small>
+            <small>Britannia</small>
+            <small>Glucon D</small>
+            <small>Parle Products</small>
+          </div>
+          <div class="col-6 col-lg-3">
+            <b class="mb-2">Sports</b>
+            <small>Association Football (Soccer)</small>
+            <small>Cricket</small>
+            <small>Baseball</small>
+            <small>Volleyball</small>
+            <small>Tennis</small>
+            <small>Field Hockey</small>
+            <small>Table Tennis</small>
+          </div>
         </div>
       </div>
     </div>
     <footer class="my-3">
-        <small>© 2018 Ensyspace. All Rights Reserved.</small>
+      <small>© 2018 Ensyspace. All Rights Reserved.</small>
     </footer>
   </body>
 </html>

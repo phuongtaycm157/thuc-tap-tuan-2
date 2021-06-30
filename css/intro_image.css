@@ -1,15 +1,20 @@
 .main-page {
     background-color: white;
 }
+.navbar {
+    background-color: white;
+}
 a.nav-link {
     font-size: 3.4rem;
 }
 .slogan .small-text {
-    font-size: 1.875rem;
+    font-size: 1.7rem;
     font-style: italic;
+    position: relative;
+    right: -5rem;
 }
 .slogan .large-text {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .space {
     height: 10vw;
@@ -57,9 +62,23 @@ div[class="anchor"] {
     border-right: none;
     z-index: 3;
 }
-
+.navbar .show {
+    height: 95vh;
+}
+@media (min-width: 321px) {
+    .slogan .small-text {
+        font-size: 1.875rem;
+        font-style: italic;
+    }
+    .slogan .large-text {
+        font-size: 3.2rem;
+    }
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .slogan .small-text {
+        right: -4rem;
+    }
     a.nav-link {
         font-size: 2.2rem;
     }
@@ -71,6 +90,9 @@ div[class="anchor"] {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .navbar {
+        position: static;
+    }
     .main-page {
         position: relative;
         top: -20vw;

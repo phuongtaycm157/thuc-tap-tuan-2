@@ -62,6 +62,17 @@
     top: 0px;
     background-position: -594px -255px;
 }
+@media (min-width: 321px) {
+    .nps-awards__title,
+    .nps-awards__content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .nps-awards__image {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 

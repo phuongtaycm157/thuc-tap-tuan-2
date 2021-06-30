@@ -8,7 +8,7 @@
     align-self: flex-start;
 }
 .we-are-exp .we-are-exp__title .title-2 {
-    font-size: 4.4rem;
+    font-size: 4.1rem;
 }
 .we-are-exp .we-are-exp__title .title-3 {
     font-size: 2.8rem;
@@ -17,7 +17,26 @@
 .we-are-exp .we-are-exp__content p {
     font-size: 1.7rem;
 }
+@media (min-width: 321px) {
+    .we-are-exp .we-are-exp__title .title-2 {
+        font-size: 4.8rem;
+    }
+}
 @media (min-width: 992px) {
+    .we-are-exp .we-are-exp__title .title-1 {
+        font-size: 2.5rem;
+    }
+    .we-are-exp .we-are-exp__title .title-2 {
+        font-size: 3.6rem;
+    }
+    .we-are-exp .we-are-exp__title .title-3 {
+        font-size: 1.5rem;
+    }
+    .we-are-exp .we-are-exp__content p {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1200px) {
     .we-are-exp .we-are-exp__title {
         width: auto;
     }
