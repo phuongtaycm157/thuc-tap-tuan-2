@@ -1,12 +1,10 @@
 .subscribe {
-    width: 1440px;
-    height: 388px;
     padding: 0;
     background-color: #fff;
     font-family: LibreBaskerville, sans-serif;
 }
 .subscribe .subcribe__title {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 .subscribe .subcribe__input {
     display: flex;
@@ -16,9 +14,8 @@
     border: none;
     background-color: #000;
     color: white;
-    font-size: 15px;
+    font-size: 1.5rem;
     height: 53px;
-    width: 484px;
     padding: 16px 20px;
 }
 .subscribe .subcribe__input input::placeholder {
@@ -34,4 +31,15 @@
     border: none;
     height: 53px;
     width: 53px;
+}
+.subscribe .subcribe__socials a {
+    color: black;
+}
+.subscribe .subcribe__socials a:hover {
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+    .subscribe .subcribe__title {
+        font-size: 2.5rem;
+    }
 }

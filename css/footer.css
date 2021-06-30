@@ -1,16 +1,27 @@
-.footer-top {
-    width: 1440px;
-}
 .footer-top b,
 .footer-top small {
     display: block;
 }
+.footer-top b {
+    font-size: 1.8rem;
+}
 .footer-top small {
-    font-size: 14px;
     font-style: italic;
+    font-size: 1.2rem;
 }
 footer small {
     display: block;
-    font-size: 14px;
+    font-size: 1.2rem;
     text-align: center;
+}
+@media (min-width: 992px) {
+    .footer-top b {
+        font-size: 1rem;
+    }
+    .footer-top small {
+        font-size: 0.9rem;
+    }
+    footer small {
+        font-size: 0.9rem;
+    }
 }

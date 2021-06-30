@@ -1,44 +1,56 @@
-.latest-from {
-    width: 1440px;
-    height: 468px;
-    padding: 0;
-    border-top: 1px solid #D2DDE8;
-    border-bottom: 1px solid #707070;
-    font-family: LibreBaskerville, sans-serif;
+.latest-from__title {
+    font-size: 2.8rem;
 }
-.latest-from .latest-from__title {
-    font-size: 40px;
-    text-align: center;
-}
-.latest-from .latest-from__content {
-    display: flex;
-}
-.latest-from .latest-from__content .latest-from__content--open,
-.latest-from .latest-from__content .latest-from__content--close {
+.latest-from__content .latest-from__content--open,
+.latest-from__content .latest-from__content--close {
     font-family: AraAlBayan;
     font-size: 60px;
     color: #000;
 }
-.latest-from .latest-from__content .latest-from__content--open {
+.latest-from__content .latest-from__content--open {
     transform: rotate(180deg);
     display: block;
     position: relative;
-    top: -65px;
+    top: -11rem;
 }
-.latest-from .latest-from__content .latest-from__content--close {
+.latest-from__content .latest-from__content--close {
     display: block;
     position: relative;
-    top: 50px;
+    bottom: -11rem;
 }
-.latest-from .latest-from__content .latest-from__content--content {
-    font-size: 18px;
+.latest-from__content .latest-from__content--content {
+    font-size: 1.7rem;
     color: #000;
     text-align: center;
 }
-.latest-from .latest-from__button {
-    width: 135px;
-    height: 43px;
-    font-size: 14px;
-    background-color: white;
-    border: 1px solid #000;
+
+@media (min-width: 992px) {
+    .latest-from__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .latest-from__content .latest-from__content--open,
+    .latest-from__content .latest-from__content--close {
+        font-family: AraAlBayan;
+        font-size: 3.75rem;
+        color: #000;
+    }
+    .latest-from__content .latest-from__content--open {
+        top: -3rem;
+    }
+    .latest-from__content .latest-from__content--close {
+        bottom: -3rem;
+    }
+    .latest-from__content .latest-from__content--content {
+        font-size: 1.1rem;
+        color: #000;
+        text-align: center;
+    }
+    .latest-from__button {
+        width: 135px;
+        height: 43px;
+        font-size: 14px;
+        background-color: white;
+        border: 1px solid #000;
+    }
 }
