@@ -4,11 +4,11 @@ window.onload = () => {
   let openIcon = document.getElementById("openIcon");
   let closeIcon = document.getElementById("closeIcon");
 
-  if (w < 992) {
-    closeIcon.style.display = "none";
-    let collapseButton = document.getElementById("collapseButton");
-    collapseButton.addEventListener("click", switchState);
-  }
+  // if (w < 992) {
+  closeIcon.style.display = "none";
+  let collapseButton = document.getElementById("collapseButton");
+  collapseButton.addEventListener("click", switchState);
+  // }
 };
 const switchState = () => {
   if (collapseButton.ariaExpanded === "true") {
